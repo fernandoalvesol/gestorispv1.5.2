@@ -21,30 +21,38 @@ class ExtratoController extends Controller {
 
     public function index() {
 
+        //$caixas = Caixa::where('users_id', auth()->user()->id)->get();
+
+        $filial = Filial::get()->pluck('name', 'name');
+
         $caixas = Caixa::where('DATA', '>=', date('Y-m-d'))
                 ->where('DATA', '<=', date('Y-m-d'))
                 ->orderBy('DATA', 'ASC')
                 ->get();
 
-
-
-        return view('Painel.Extrato.extrato', compact('caixas'));
+        return view('Painel.Extrato.extrato', compact('caixas', 'filial'));
     }
 
     public function gerar(Request $request) {
 
+      
         session([
             'inicio' => $request->dataInic,
-            'fim' => $request->dataFinal
-        ]);
+            'fim' => $request->dataFinal,
+            'filial' => $request->FILIAL,
+        ]); 
 
+       // dd($request->FILIAL);
 
         $caixas = Caixa::where('DATA', '>=', $request->dataInic)
                 ->where('DATA', '<=', $request->dataFinal)
-                ->orderBy('DATA', 'ASC')
-                ->get();
+                ->where('FILIAL', '=', $request->FILIAL)
+                ->orderBy('DATA', 'ASC' )
+                ->get();                
 
-        return view('Painel.Extrato.extrato', compact('caixas', 'caixaData'));
+                $filial = Filial::get()->pluck('name', 'name');
+
+        return view('Painel.Extrato.extrato', compact('caixas', 'filial'));
     }
     
     

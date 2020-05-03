@@ -48,6 +48,7 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Painel'], function () {
     
     //Rotas Relatorios
     Route::get('pdfcaixa', 'RelatorioController@relcaixa')->name('pdfcaixa');
+    Route::get('pdfgeral', 'RelatorioController@relgeral')->name('pdfgeral');
     Route::get('pdfressarcimento', 'RelatorioController@relres')->name('pdfressarcimento');
 
     //Rotas dos Extratos do Caixa            

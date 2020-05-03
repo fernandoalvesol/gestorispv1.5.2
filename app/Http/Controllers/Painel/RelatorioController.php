@@ -29,4 +29,14 @@ class RelatorioController extends Controller
 
 
     }
+
+    public function relgeral(){
+
+        $caixas = Caixa::all();
+        
+        return \PDF::loadView('Painel.Pdf.relgeral', compact('caixas'))
+                ->download('relatorio.pdf');
+
+
+    }
 }

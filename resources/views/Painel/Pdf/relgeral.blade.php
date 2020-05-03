@@ -11,7 +11,7 @@
 
         <div class="col-md-6">
             <h1>SETTA PROTEÇÃO VEICULAR</h1>
-            <p>Relatório Financeiro</p>
+            <p>Relatório Gerancial Financeiro - Escritórios Setta</p>
             <p>Escritório / Operador: {{ auth()->user()->name}}</p>
             
         </div>

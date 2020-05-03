@@ -7,7 +7,7 @@
     <div class="row col-md-12">
         <div class="breadcrumb">
             <a href="{{url('/painel')}}" class="breadcrumb-item">Home  /</a> 
-            <a href="{{url('/indicadores')}}" class="breadcrumb-item">Indicadores</a>
+            <a href="{{url('/extratos')}}" class="breadcrumb-item">Extratos</a>
         </div>
 
     </div>
@@ -18,7 +18,7 @@
     <div class="container">
 
         <div class="title-extrados">
-            <h2>EXTRATO POR PERÍODO</h2>
+            <h2>EXTRATO</h2>
         </div>
         @can('view_caixa')
         <div class="row col-md-12 formulario-extrato">
@@ -32,7 +32,11 @@
                 <div class="form-group col-md-4">
                     {{Form::label('dataFinal', 'Até: ') }}
                     {{Form::date('dataFinal', isset($_GET['dataFinal']) ? $_GET['dataFinal'] : date('Y-m-d'), ['class' => 'form-control', 'required']) }}
-                </div>                 
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Filial</label><br>
+                    {!! Form::select('FILIAL', $filial, ['placeholder' => 'Escolha a Sua Filial:', 'class' => 'form-control'])!!}
+                </div>                  
             </div>
             <div class="form-group">
                 <button class="btn btn-extrato"> Enviar</button>

@@ -31,9 +31,12 @@
                 {!! Form::submit('Filtrar', ['class' => 'btn']) !!}
                 {!! Form::close() !!}
             </div>
+            @can('view_caixa')
             <div class="form-search col-xl-6 col-md-6">
-                <button class="relatorio-btn"><a href="{{url('/pdfcaixa')}}"><i class="fa fa-file"></i></a></button>      
+                <button class="relatorio-btn"><a href="{{url('/pdfcaixa')}}">RELATÓRIO POR FILIAL</a></button> 
+                <button class="relatorio-btn"><a href="{{url('/pdfgeral')}}">RELATÓRIO GERAL</a></button>     
             </div>
+            @endcan
         </div>
     </div>
     
