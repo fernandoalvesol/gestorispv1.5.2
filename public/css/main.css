@@ -1,0 +1,196 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/09/2019, 21:56:29
+    Author     : fernando
+    */
+
+
+/*
+Estilo de botoes
+*/
+
+.meu-login{
+    background: url('https://images.unsplash.com/photo-1544614463-88b0c990b4c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1398&q=80') no-repeat center center fixed !important; 
+    -webkit-background-size: cover  !important;
+    -moz-background-size: cover  !important;
+    -o-background-size: cover  !important;
+    background-size: cover  !important;
+}
+
+.btn-insert{
+    background: #3c8cbc;
+    margin: 3px -1px 3px -10px;
+    padding: 8px 18px 9px 12px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.btn-enviar{
+    background: #3c8cbc;
+    color: #fff;
+    margin: -5px 11px 6px 4px;
+    padding: 6px 20px 10px 22px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.btn-cad-user{margin: 1px 1px -6px 30px;padding: 9px 29px 8px 30px;color: #fff;font-weight: BOLD;background: #3c8dbc;}
+
+.btn-buscar{
+    padding: 5px 5px 5px 9px;
+    width: 50%;
+    margin: 26px 8px 12px;
+    background: #7c9fae;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-extrato{
+    margin: -2px 9px 10px 16px;
+    padding: 10px 41px 13px 35px;
+    color: #fff;
+    background: #3c8dbc;
+}
+
+
+.exibir_conteudo{
+    background: #3c8cbc;
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+}
+.editar_conteudo{
+    background: #0bd05e;
+    margin: 5px 5px 5px 6px;
+    padding: 6px 7px 6px;
+    border-radius: 5px;
+    color: #ecf0f5;
+}
+.remover_conteudo{
+    background: #f10f0f;
+    color: #fff;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.del-modal{
+    
+    font-size: 25px;
+    padding: 10px 12px 12px;
+    text-align: center;
+}
+
+.title{}
+.title-pg{
+    padding: 14px 2px;
+    float: left;
+}
+
+.form-search{
+    padding: 1px 1px 19px 3px;
+    float: left;
+}
+
+.bloco-home{
+    padding: 10px 9px 9px 15px;
+    margin: 10px 9px 9px 1px;
+}
+
+.tabela{
+    font-size: 13px;
+    text-align: left;
+    width: 90%;
+    max-width: 90%;
+}
+
+
+.formulario{
+    float: left;
+}
+
+.formulario-caduser{
+    margin: -5px 4px 4px -23px;
+}
+
+.formulario-extrato{
+    float: right;
+    margin: 1px 50px 0px -15px;
+    padding: 4px 6px 1px 5px;
+}
+
+.form-entradas{
+    margin-left: -65px;
+}
+
+.del-icones{
+    text-align: center;
+    font-size: 80px;
+    color: #e80e0e;
+}
+
+.indicadores{
+    
+    font-size: 1.2em;
+    padding: 5px 7px;
+}
+
+.titulo-home{
+    font-size: 30px;
+    padding: 12px 9px;
+    text-align: left;
+    background-color: #3c8dbc;
+    text-align: center;
+    padding: 12px 10px 10px 0px;
+    border-radius: 7px;
+    color: #fff;
+}
+
+.sub-titulo-user{
+    text-align: right;
+    margin: 8px 8px 13px 7px;
+    font-size: 16px;
+}
+
+.topo-dashboard{
+    margin: 27px 8px 8px 5px;
+}
+
+.menu-table{
+    font-size: 13px;
+}
+
+.btn-acessar{
+    padding: 10px 20px 14px 16px;
+    margin: 3px 29px 10px 12px;
+    background: #354c7e;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.btn-acessar:hover{
+    
+}
+
+.rodape-text{
+    margin: -8px -1px 2px 0px;
+    padding: 2px 10px 8px 8px;
+    font-size: medium;
+}
+
+.relatorio-btn{
+    float: right;
+    font-size: 21px;
+    padding: 7px 10px;
+    margin: 18px 12px;
+}
+
+
+.icone-alerta{text-align: center;font-size: 107px;color: #e80c0c;}
+
