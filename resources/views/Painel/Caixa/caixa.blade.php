@@ -7,8 +7,7 @@
 <div class="right_col" role="main">
 
     <div class="breadcrumb">
-        <a href="{{ url('/painel') }}" class="breadcrumb-item">Home  /</a>
-        <a href="{{ url('/caixas') }}" class="breadcrumb-item"> Fluxo de Caixa</a>
+        <a href="{{ url('/painel') }}" class="breadcrumb-item">Painel</a>
     </div>
 
 
@@ -33,7 +32,6 @@
             </div>
             @can('view_caixa')
             <div class="form-search col-xl-6 col-md-6">
-                <button class="relatorio-btn"><a href="{{url('/pdfcaixa')}}">RELATÓRIO POR FILIAL</a></button> 
                 <button class="relatorio-btn"><a href="{{url('/pdfgeral')}}">RELATÓRIO GERAL</a></button>     
             </div>
             @endcan

@@ -42,6 +42,7 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Painel'], function () {
 
     //Rotas do Fluxo de Caixa
     Route::get('/caixas', 'CaixaController@index')->name('caixas');
+    Route::get('/controle', 'CaixaController@controlCaixa')->name('controle.caixa');
     Route::any('caixas/pesquisar', 'CaixaController@search')->name('caixas.search');
     Route::get('buscar', 'CaixaController@buscar');
     Route::resource('caixaedit', 'CaixaController');
@@ -64,9 +65,13 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Painel'], function () {
     //Rotas das Saídas do Caixa            
     Route::get('/saidas', 'SaidasController@index');
     Route::resource('sair', 'SaidasController');
+
+      //Rotas Módulo Adesoes            
+      //Route::get('/associados', 'SaidasController@index')->name('associados');
+      //Route::resource('sair', 'SaidasController');
     
     //Debug
-    Route::get('/debug', 'UserController@debug');
+    //Route::get('/debug', 'UserController@debug');
     
 });
 

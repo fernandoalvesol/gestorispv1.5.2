@@ -35,6 +35,22 @@ class CaixaController extends Controller
         return view('Painel.Caixa.caixa', compact('caixas'));
     }
 
+    public function controlCaixa(){
+
+        $title = "Controle de Caixa";
+
+        $caixas = $this->caixa->get()->all();
+        
+        //$caixas = Caixa::where('DATA', date('Y-m-d'))->orderBy('DATA', 'ASC')->get();
+        
+        //$caixas = Caixa::where('users_id', auth()->user()->id)->get();
+
+        //$paginas = $this->caixa->paginate($this->totalPage);       
+       
+              
+        return view('Painel.Caixa.caixa', compact('caixas'));
+    }
+
     public function edit($id){
 
         $caixas = $this->caixa->find($id);
@@ -82,7 +98,7 @@ class CaixaController extends Controller
                         ->where('N_TITULO', 'LIKE', "%{$dataForm['key-search']}%")
                         ->orWhere('PLACA', $dataForm['key-search'])
                         ->orWhere('FILIAL', $dataForm['key-search'])
-                        ->paginate($this->totalPage);
+                        ->get()->all();
         
          return view('Painel.Caixa.caixa', compact('caixas', 'dataForm'));
     }

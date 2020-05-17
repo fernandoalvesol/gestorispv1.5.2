@@ -43,6 +43,7 @@ class ExtratoController extends Controller {
         ]); 
 
        // dd($request->FILIAL);
+       //pega o caixa por período e por filial
 
         $caixas = Caixa::where('DATA', '>=', $request->dataInic)
                 ->where('DATA', '<=', $request->dataFinal)

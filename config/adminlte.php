@@ -156,8 +156,7 @@ return [
             'text' => 'Controle Financeiro',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-user',
-            'submenu' => [ 
-               
+            'submenu' => [                
                
                 [
                     'text'    => 'Controle de Caixa',
@@ -180,6 +179,12 @@ return [
                             'icon' => 'fas fa-money-check-alt',
                         ],
                         [
+                            'text' => 'Controle de Entradas',
+                            'url'  => '/controle',
+                            'can'  => 'view_caixa',
+                            'icon' => 'fas fa-money-check-alt',
+                        ],
+                        [
                             'text' => 'Extrato do Caixa',
                             'url'  => '/extratos',
                             'can'  => 'view_caixa',
@@ -188,6 +193,29 @@ return [
                         
                     ],
                 ],
+
+                [
+                    'text'      => 'Relatório Financeiro',
+                    'icon'      => 'fas fa-clipboard-list',
+                    'can'  => 'view_caixa',
+                    'submenu'   => [
+                        [
+                            'text' => 'Relatório Geral',
+                            'url'  => '/entradas',
+                            'icon' => 'fas fa-list-ul',
+                        ],
+
+                        [
+                            'text' => 'Relatório por Escritórios',
+                            'url'  => '/saidas',
+                            'icon' => 'fas fa-list-ul',
+                        ],
+
+
+                    ]
+
+                ],
+
             ],
 
         ],
@@ -229,30 +257,18 @@ return [
 
         //Start Menu Almoxarifado
 
-        ['header' => 'GESTÃO DE SINISTROS'],
+        ['header' => 'GESTÃO COMERCIAL'],
 
         [
-            'text'    => 'Sinistros',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                
+            'text'    => 'Gestão Comercial',
+            'icon'    => 'fa fa-shopping-basket',
+            
+            'submenu' => [                
                 [
-                    'text' => 'Clientes',
+                    'text' => 'Associados',
                     'icon' => 'fas fa-user-tie',
-                    'url'  => '/indicadores',
-                ],
-
-                [
-                    'text' => 'Veículos',
-                    'icon' => 'fas fa-car',
-                    'url'  => '/setores',
-                ],
-                [
-                    'text' => 'Sinistros',
-                    'icon' => 'fas fa-car-crash',
-                    'url'  => '/lancamentos',
-                ],
-                                
+                    'url'  => '/associados',
+                ],         
             ],
         ],
         //End Menu Qualidade e Controle
