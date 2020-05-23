@@ -66,9 +66,9 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Painel'], function () {
     Route::get('/saidas', 'SaidasController@index');
     Route::resource('sair', 'SaidasController');
 
-      //Rotas Módulo Adesoes            
-      //Route::get('/associados', 'SaidasController@index')->name('associados');
-      //Route::resource('sair', 'SaidasController');
+    //Rotas Módulo Adesoes            
+    Route::get('/adesao', 'AssociadosController@index')->name('adesao');
+    Route::resource('adesao', 'AssociadosController');
     
     //Debug
     //Route::get('/debug', 'UserController@debug');

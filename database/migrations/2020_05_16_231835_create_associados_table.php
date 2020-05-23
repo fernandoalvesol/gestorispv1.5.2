@@ -22,6 +22,7 @@ class CreateAssociadosTable extends Migration
             $table->integer('numero');
             $table->string('bairro', 155);
             $table->string('cidade', 155);
+            $table->string('estado', 100);
             $table->integer('cep');
             $table->date('dtnascimento');
             $table->date('dtadesao');

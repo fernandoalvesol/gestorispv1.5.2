@@ -267,7 +267,7 @@ return [
                 [
                     'text' => 'Associados',
                     'icon' => 'fas fa-user-tie',
-                    'url'  => '/associados',
+                    'url'  => '/adesao',
                 ],         
             ],
         ],
