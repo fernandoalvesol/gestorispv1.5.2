@@ -130,11 +130,7 @@ return [
                     'url'  => '/usuarios',
                     'icon' => 'fas fa-address-card',
                 ],
-                [
-                    'text' => 'Gestão de Fornecedores',
-                    'url'  => '/usuarios',
-                    'icon' => 'fas fa-fw fa-lock',
-                ],
+                
                 [
                     'text' => 'Gestão de Filiais',
                     'url'  => '/filial',
@@ -155,7 +151,7 @@ return [
         [
             'text' => 'Controle Financeiro',
             'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fa fa-calculator',
             'submenu' => [                
                
                 [
@@ -260,13 +256,33 @@ return [
         ['header' => 'GESTÃO COMERCIAL'],
 
         [
-            'text'    => 'Gestão Comercial',
-            'icon'    => 'fa fa-shopping-basket',
+            'text'    => 'Gestão da Oficina',
+            'icon'    => 'fa fa-car',
             
-            'submenu' => [                
+            'submenu' => [  
                 [
-                    'text' => 'Associados',
+                    'text' => 'Fornecedor',
                     'icon' => 'fas fa-user-tie',
+                    'url'  => '/adesao',
+                ],  
+                [
+                    'text' => 'Produtos',
+                    'icon' => 'fa fa-cubes',
+                    'url'  => '/adesao',
+                ],                 
+                [
+                    'text' => 'Associado',
+                    'icon' => 'fa fa-users',
+                    'url'  => '/adesao',
+                ],  
+                [
+                    'text' => 'Veiculo',
+                    'icon' => 'fa fa-car',
+                    'url'  => '/adesao',
+                ],  
+                [
+                    'text' => 'Ordem de Serviço',
+                    'icon' => 'fa fa-shopping-basket',
                     'url'  => '/adesao',
                 ],         
             ],

@@ -13,6 +13,7 @@
                 <thead>
                     <tr>
                         <th>Name</th>
+                        <th>Tipo</th>
                         <th>Placa</th>
                         <th>Data Ressarcimento</th>
                         <th>Chassi</th>
@@ -23,6 +24,7 @@
                     
                     <tr>
                         <td>{{$ressarcimento->name}}</td>
+                        <td>{{$ressarcimento->tipo}}</td>
                         <td>{{$ressarcimento->placa}}</td>
                         <td> {{date('d/m/Y', strtotime($ressarcimento->dtressarcimento))}} </td>
                         <td>{{$ressarcimento->chassi}}</td>
