@@ -19,7 +19,9 @@ class Ressarcimento extends Model
 
     protected $fillable = [
         
-        'name', 'tipo', 'placa', 'chassi', 'dtsinistro', 'dtressarcimento', 'status', 'dtrecuperado'
+        'name', 'tipo', 'cor', 'placa', 'chassi', 
+        'dtsinistro', 'dtressarcimento', 
+        'status', 'dtrecuperado'
     ];
     
     

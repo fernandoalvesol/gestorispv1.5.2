@@ -59,20 +59,20 @@
                     @endif
 
                     <div class="form-group col-md-10 col-xl-10">
-
-                        <div class="form-group col-md-10 col-xl-10">
+                        
                             <label>Nome do Associado</label>
                             {!! Form::text('name', null, ['placeholder' => 'Nome do Associado:', 'class' => 'form-control'])!!}
-                        </div>
+                        
                     </div>
-                    <div class="form-group col-md-10 col-xl-10">
-
-                        <div class="form-group col-md-10 col-xl-10">
+                    <div class="form-group col-md-5 col-xl-5">  
                             <label>Tipo do Veículo</label>
                             {!! Form::text('tipo', null, ['placeholder' => 'Tipo do Veículo', 'class' => 'form-control'])!!}
-                        </div>
                     </div>
-                    <div class="form-group col-md-10 col-xl-10">
+                    <div class="form-group col-md-5 col-xl-5">  
+                            <label>Cor do Veículo</label>
+                            {!! Form::text('cor', null, ['placeholder' => 'Cor do Veículo', 'class' => 'form-control'])!!}
+                    </div>
+                    
                         <div class="form-group col-md-5 col-xl-5">  
 
                             <label>Placa do Veículo</label>
@@ -85,8 +85,7 @@
                             {!! Form::text('chassi', null, ['placeholder' => 'Digite o Chassi do Veículo:', 'class' => 'form-control'])!!}
 
                         </div>
-                    </div>
-                    <div class="form-group col-md-10 col-xl-10"> 
+                    
                         <div class="form-group col-md-5 col-xl-5"> 
 
                             <label>Data do Sinistro</label><br>
@@ -100,9 +99,7 @@
                             {!! Form::date('dtressarcimento', null, ['placeholder' => 'Qual a Data do Ressarcimento:', 'class' => 'form-control'])!!}
 
                         </div>
-                    </div>
-
-                    <div class="form-group col-md-10 col-xl-10">  
+                     
                         <div class="form-group col-md-5 col-xl-5"> 
 
                             <label>Status</label>
@@ -116,18 +113,11 @@
                             {!! Form::date('dtrecuperado', null, ['placeholder' => 'Qual a Data da Recuperação:', 'class' => 'form-control'])!!}
 
                         </div>
-                    </div>
-
-
-                    <div class="form-group col-md-10 col-xl-10">
                         <div class="form-group col-md-10 col-xl-10">
 
                             <button class="btn btn-enviar"> Enviar</button>
 
                         </div>
-                    </div>
-
-
 
                     {!! Form::close()!!}
 

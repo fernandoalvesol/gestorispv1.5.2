@@ -57,6 +57,7 @@
                     <th>Associado</th>
                     <th>Placa</th>
                     <th>Tipo</th>
+                    <th>Cor</th>
                     <th>Chassi</th>
                     <th>Data Sinistro</th>
                     <th>Data Ressarcimento</th>            
@@ -70,6 +71,7 @@
                     <td>{{$ressarcimentos->name}}</td>
                     <td>{{$ressarcimentos->placa}}</td>
                     <td>{{$ressarcimentos->tipo}}</td>
+                    <td>{{$ressarcimentos->cor}}</td>
                     <td>{{$ressarcimentos->chassi}}</td>
                     <td>{{$ressarcimentos->dtsinistro}}</td>
                     <td>{{$ressarcimentos->dtressarcimento}}</td>            
@@ -78,8 +80,8 @@
 
                     <td>
 
-                        <a href="{{route('ressarcimento.show', $ressarcimentos->id)}}" class="exibir_conteudo"><span class="glyphicon glyphicon-eye-open"></span> EXIBIR</a>
-                        <a href="{{route('ressarcimento.edit', $ressarcimentos->id)}}" class="editar_conteudo"><span class="glyphicon glyphicon-pencil"></span> EDITAR</a>
+                        <a href="{{route('ressarcimento.show', $ressarcimentos->id)}}" class="exibir_conteudo"><span class="glyphicon glyphicon-eye-open"></span></a>
+                        <a href="{{route('ressarcimento.edit', $ressarcimentos->id)}}" class="editar_conteudo"><span class="glyphicon glyphicon-pencil"></span></a>
                         <!-- Botão para acionar modal -->
 
 

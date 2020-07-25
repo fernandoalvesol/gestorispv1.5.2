@@ -71,14 +71,15 @@ Estilo de botoes
 .exibir_conteudo{
     background: #3c8cbc;
     color: #fff;
-    padding: 6px 17px 10px;
+    padding: 5px 18px 5px;
     border-radius: 5px;
+    width: 10%;
 }
 .editar_conteudo{
     background: #0bd05e;
     margin: 5px 5px 5px 6px;
-    padding: 6px 17px 10px;
-    border-radius: 5px;
+    padding: 5px 18px 4px;
+    border-radius: 8px;
     color: #ecf0f5;
 }
 .veiculo_conteudo{
